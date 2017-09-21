@@ -1,0 +1,228 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="UTF-8">
+	<title>Survey Page</title>
+	<!-- bootstrap -->
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta/css/bootstrap.min.css" integrity="sha384-/Y6pD6FV/Vv2HJnA6t+vslU6fwYXjCFtcEpHbNJ0lyAFsXTsjBbfaDjzALeQsN6M" crossorigin="anonymous">
+	<!-- jquery -->
+	<script src="https://code.jquery.com/jquery-3.2.1.min.js"
+  	integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4=" crossorigin="anonymous"></script>
+	<!-- ajax -->
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.11.0/umd/popper.min.js" integrity="sha384-b/U6ypiBEHpOf/4+1nzFpr53nxSS+GLCkfwBdFNTxtclqqenISfwAzpKaMNFNmj4" crossorigin="anonymous"></script>
+	<!-- bootstrap -->
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta/js/bootstrap.min.js" integrity="sha384-h0AbiXch4ZDo7tp9hKZ4TsHbi047NrKGLO3SEJAg45jXxnGIfYzk4Si90RDIqNm1" crossorigin="anonymous"></script>
+	
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+
+</head>
+<body>
+<div class = "container">
+	<h1>Survey Questions</h1>
+	<hr>
+		<h2>About You</h2>
+			<h4>Name (Required)</h4>
+			<input type="text" id="name" class= "form-control" required>
+			<h4>Link to Photo Image (Required)</h4>
+			<input type="text" id="photo" class= "form-control" required>
+			<hr>
+		<form method="POST" role="form" action="/api/friends">
+			<h3>Question 1</h3>
+				<h4>You look forward to outings with lots of people</h4>
+					<div class="form-group">
+	            		<select class="form-control" id="q1" name= "scores[0]">
+	              			<option>Choose One</option>
+	              			<option>1 (Strongly Disagree)</option>
+	              			<option>2</option>
+	              			<option>3</option>
+	              			<option>4</option>
+	              			<option>5 (Strongly Agree)</option>
+	            		</select>
+	          		</div>
+				
+			<h3>Question 2</h3>
+				<h4>You like to discuss current events</h4>
+					<div class="form-group">
+	            		<select class="form-control" id="q2" name= "scores[1]">
+	              			<option>Choose One</option>
+	              			<option>1 (Strongly Disagree)</option>
+	              			<option>2</option>
+	              			<option>3</option>
+	              			<option>4</option>
+	              			<option>5 (Strongly Agree)</option>
+	            		</select>
+	          		</div>
+
+			<h3>Question 3</h3>
+				<h4>You like to have smaller gatherings with a few people</h4>
+					<div class="form-group">
+	            		<select class="form-control" id="q3" name= "scores[2]">
+	              			<option>Choose One</option>
+	              			<option>1 (Strongly Disagree)</option>
+	              			<option>2</option>
+	              			<option>3</option>
+	              			<option>4</option>
+	              			<option>5 (Strongly Agree)</option>
+	            		</select>
+	          		</div>
+
+			<h3>Question 4</h3>
+				<h4>People rarely upset you</h4>
+					<div class="form-group">
+	            		<select class="form-control" id="q4" name= "scores[3]">
+	              			<option>Choose One</option>
+	              			<option>1 (Strongly Disagree)</option>
+	              			<option>2</option>
+	              			<option>3</option>
+	              			<option>4</option>
+	              			<option>5 (Strongly Agree)</option>
+	            		</select>
+	          		</div>
+
+			<h3>Question 5</h3>
+				<h4>You like to have a plan vs being spontaneous</h4>
+					<div class="form-group">
+	            		<select class="form-control" id="q5" name= "scores[4]">
+	              			<option>Choose One</option>
+	              			<option>1 (Strongly Disagree)</option>
+	              			<option>2</option>
+	              			<option>3</option>
+	              			<option>4</option>
+	              			<option>5 (Strongly Agree)</option>
+	            		</select>
+	          		</div>
+				
+			<h3>Question 6</h3>
+				<h4>You have to be right regardless of the facts</h4>
+					<div class="form-group">
+	            		<select class="form-control" id="q6" name= "scores[5]">
+	              			<option>Choose One</option>
+	              			<option>1 (Strongly Disagree)</option>
+	              			<option>2</option>
+	              			<option>3</option>
+	              			<option>4</option>
+	              			<option>5 (Strongly Agree)</option>
+	            		</select>
+	          		</div>
+				
+			<h3>Question 7</h3>
+				<h4>You like to get together multiple times a week</h4>
+					<div class="form-group">
+	            		<select class="form-control" id="q7" name= "scores[6]">
+	              			<option>Choose One</option>
+	              			<option>1 (Strongly Disagree)</option>
+	              			<option>2</option>
+	              			<option>3</option>
+	              			<option>4</option>
+	              			<option>5 (Strongly Agree)</option>
+	            		</select>
+	          		</div>
+
+			<h3>Question 8</h3>
+				<h4>You like to be the leader</h4>
+					<div class="form-group">
+	            		<select class="form-control" id="q8" name= "scores[7]">
+	              			<option>Choose One</option>
+	              			<option>1 (Strongly Disagree)</option>
+	              			<option>2</option>
+	              			<option>3</option>
+	              			<option>4</option>
+	              			<option>5 (Strongly Agree)</option>
+	            		</select>
+	          		</div>
+
+			<h3>Question 9</h3>
+				<h4>You like to discuss fantasy topics</h4>
+					<div class="form-group">
+	            		<select class="form-control" id="q9" name= "scores[8]">
+	              			<option>Choose One</option>
+	              			<option>1 (Strongly Disagree)</option>
+	              			<option>2</option>
+	              			<option>3</option>
+	              			<option>4</option>
+	              			<option>5 (Strongly Agree)</option>
+	            		</select>
+	          		</div>
+
+			<h3>Question 10</h3>
+				<h4>You feel physically and mentally drained after spending time with friends</h4>
+					<div class="form-group">
+	            		<select class="form-control" id="q10" name= "scores[9]">
+	              			<option>Choose One</option>
+	              			<option>1 (Strongly Disagree)</option>
+	              			<option>2</option>
+	              			<option>3</option>
+	              			<option>4</option>
+	              			<option>5 (Strongly Agree)</option>
+	            		</select>
+	          		</div>
+		</form>
+		<br>
+		<button type="button" class="btn btn-primary btn-lg btn-block" id= "submit">
+			<img src= "../public/images/check.svg" alt= "checkmark" height= 15px width= 15px>
+			Submit
+		</button>
+	<hr>
+	<div class = "container">
+		<p>
+			<a href="/api/friendsArray">API Friends List </a>
+			  |   
+			<a href="#"> GitHub Repo</a>
+		</p>
+	</div>
+ 
+<!-- Best Friend Modal -->
+	<div class="modal fade" id= "bestFriendModal" role="dialog">
+	  <div class="modal-dialog">
+	    <div class="modal-content">
+	      <div class="modal-header">
+	        <h3 class="modal-title">Your Best Friend Is...</h3>
+	        <button type="button" class="close" data-dismiss="modal">X</button>
+	      </div>
+	      <div class="modal-body">
+	        <h2 id="bestFriendName"></h2>
+			<img id="bestFriendImg" src= "#" alt= "friend pic">
+	      </div>
+	    </div>
+	  </div>
+	</div>		
+</div>
+</body>
+	<script type="text/javascript">
+
+		$("#submit").on("click", function(event) {
+			event.preventDefault();
+
+		var newFriend = {
+			name: $("#name").val().trim(),
+			photo: $("#photo").val().trim(),
+			scores: [$("#q1").val().trim(), $("#q2").val().trim(), $("#q3").val().trim(),$("#q4").val().trim(), $("#q5").val().trim(), $("#q6").val().trim(), $("#q7").val().trim(), $("#q8").val().trim(), $("#q9").val().trim(), $("#q10").val().trim()]
+		};
+
+		console.log('new friend '+JSON.stringify(newFriend, null, "\t"));
+
+		// var currentURL = window.location.origin;
+		// var friendsArray = [];
+		// friendsArray.push(newFriend);
+		$.post("/api/friendsArray", newFriend,
+		
+			function(data) {
+			// alert("Adding friend...");
+			var friendsArray = [];
+			friendsArray.push(newFriend);
+
+			setTimeout(function(){
+
+			$("#bestFriendName").text(data.name);
+			$("#bestFriendImg").attr("src", data.photo);
+
+			$("#bestFriendModal").modal("show");
+		}, 1000);
+
+			
+		});
+		return false;
+	});
+
+	</script>
+</html>
