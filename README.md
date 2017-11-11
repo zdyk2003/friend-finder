@@ -7,4 +7,5 @@
 
 ###### At this time the app shows you friend options based on Spongebob characters but can be easily switiched out to friends of a more human variety.
 
-![Alt text](/app/public/images/friendFinder.PNG?raw=true "friend finder screenshot")
+![Alt text](/app/public/images/friendFinderScreen.PNG?raw=true "friend finder")
+
